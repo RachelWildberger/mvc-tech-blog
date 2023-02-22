@@ -1,0 +1,17 @@
+[
+  {
+    "post_id": "1",
+    "comment_text": "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.",
+    "user_id": "1"
+  },
+  {
+    "post_id": "2",
+    "comment_text": "Ut eanin ad ninin veanian, quis nostrun eaxearcitationean ullan corporis suscipit laboriosan.",
+    "user_id": "2"
+  },
+  {
+    "post_id": "3",
+    "comment_text": "Quis autea iurea reapreaheandearit in voluptatea vealit!.",
+    "user_id": "3"
+  }
+]
