@@ -21,7 +21,7 @@ User.init(
         username: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true
+            unique: true,
         },
         password: {
             type: DataTypes.STRING,
@@ -31,13 +31,13 @@ User.init(
             }
         },
         hooks: {
-            beforeCreate: async (newUser) => {
-                newUser.password = await bcrypt.hash(newUser.password, 10);
-                return newUser;
+            beforeCreate: async (newUserData) => {
+                newUserData.password = await bcrypt.hash(newUserData.password, 10);
+                return newUserData;
             },
-            beforeUpdate: async (updatedUser) => {
-                updatedUser.password = await bcrypt.hash(updatedUser.password, 10); 
-                return updatedUser;
+            beforeUpdate: async (updatedUserData) => {
+                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10); 
+                return updatedUserData;
           },
         }
     },
