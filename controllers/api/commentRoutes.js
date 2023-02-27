@@ -4,38 +4,24 @@ const withAuth = require('../../utils/auth');
 
 
 router.get('/', async (req, res) => {
-  Comment.findAll({})
-  .then(commentData => res.json(commentData))
-  .catch(err => {
-      console.log(err);
-      res.status(500).json(err)
-  });
-  // try {
-  //   const commentData = await Comment.findAll({});
-  //   res.status(200).json(commentData);
-  // } catch (err) {
-  //   res.status(500).json(err);
-  // }
+  try {
+    const commentData = await Comment.findAll({});
+    res.status(200).json(commentData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/:id', async (req, res) => {
-  Comment.findAll({
-    where: req.params.id,
-  })
-  .then(commentData => res.json(commentData))
-  .catch(err => {
-      console.log(err);
-      res.status(500).json(err)
-  });
-  // try {
-  //   const commentData = await Comment.findAll(req.params.id, {
-  //     where: req.params.id,
-  //   });
+  try {
+    const commentData = await Comment.findAll(req.params.id, {
+      where: req.params.id,
+    });
 
-  //   res.status(200).json(commentData);
-  // } catch (err) {
-  //   res.status(500).json(err);
-  // }
+    res.status(200).json(commentData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // Create a comment
