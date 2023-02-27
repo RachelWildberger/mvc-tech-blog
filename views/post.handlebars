@@ -1,8 +1,10 @@
 <div class="text">
+  <div class="text-primary">
   <h2>{{title}}</h2>
-  <h5>Created by {{user.username}} on {{format_date date_created}}</h5>
+  </div>
+  <h6>Created by {{user.username}} | {{format_date date_created}}</h6>
   <p>{{description}}</p>
-
+</div>
 <div>
 {{#if logged_in}}
 <form class="new-comment-form" data-postid={{id}}>
@@ -13,13 +15,14 @@
       <button type="submit" class="btn btn-dark btn-block mb-4">Add Comment</button>
   </div>
 </form>
-  <h5>Comments:</h5>
 {{/if}}
 </div>
+ <h6>Comments:</h6>
  {{#each comments as |comment|}}
- <div style="border-style: none;">
+ <div class="border rounded m-2 p-2">
  <p>{{comment.comment_text}}</p>
+  <p>{{user.username}} on {{format_date date_created}}</p>
  </div>
  {{/each}}
-    <hr class="hr" />
+
  <script src="/js/comments.js"></script>
