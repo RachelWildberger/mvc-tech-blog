@@ -1,14 +1,17 @@
 [
   {
-    "username": "hana22",
+    "name": "Hana",
+    "username": "hana22@yahoo.com",
     "password": "Password1!"
   },
   {
-    "username": "techsophia",
+    "name": "Sophia",
+    "username": "techsophia@gmail.com",
     "password": "Password2@"
   },
   {
-    "username": "averybee",
+    "name": "Avery",
+    "username": "averybee@aol.com",
     "password": "Password3#"
   }
 ]
