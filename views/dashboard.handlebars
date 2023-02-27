@@ -8,8 +8,9 @@
   <div class="col-6">
     <h3>Create a New Post:</h3>
 
+    <form class="form new-post-form">
     <div class="form-outline mb-4">
-      <input class="form-control" type="text" id="title" placeholder="Title" />
+      <input class="form-control" type="text" id="title" name="Title" placeholder="Title" />
     </div>
 
     <div class="form-outline mb-4">
@@ -22,7 +23,7 @@
   </div>
 
   {{#if posts.length}}
-  <div class="col-md-6 blog-list">
+  <div class="col-md-6 post-list">
     <h3>Current Posts:</h3>
 
     {{#each posts as |post|}}
@@ -39,4 +40,4 @@
   {{/if}}
 </div>
 
-<script src="/js/dashboard.js"></script>
+<script src="./js/dashboard.js"></script>

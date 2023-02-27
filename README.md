@@ -9,7 +9,7 @@
   - [Questions](#questions)
 
   ## Description 
-  Built a CMS-style blog site similar to a Wordpress site called Tech Blog, where developers can publish their blog posts and comment on other developers’ posts. This application's folder structure follows the Model-View-Controller paradigm and uses express-handlebars, MySQL2, Sequelize, dotenv, bcrypt, express-session and connect-session-sequelize packages.
+  Built a CMS-style blog site similar to a Wordpress site called Tech Blog, where developers can publish their blog posts and comment on other developers’ posts. This application's folder structure follows the Model-View-Controller paradigm and uses express-handlebars, MySQL2, Sequelize, dotenv, bcrypt, express-session and connect-session-sequelize packages. 
 
   ## Installation
   Installation of [MySQL 2](https://www.npmjs.com/package/mysql2)
@@ -34,10 +34,10 @@
   * Use ``npm install express-session``
 
   ## Useage 
-  Use the command ``npm start`` to run the application on the localhost. 
+  Use the command ``npm start`` to run the application on the localhost or visit the deployed application [here](https://dark-wildflower-3803.herokuapp.com/).
   
-![Mock of tech blog]()
-![Mock of tech blog]()
+![Mock of tech blog](./assets/tech-blog-01.png)
+![Mock of tech blog](./assets/tech-blog-03.png)
 
   ## Testing 
   n/a

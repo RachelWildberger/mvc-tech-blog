@@ -50,12 +50,12 @@ router.post('/login', async (req, res) => {
 
 router.post('/signup', async (req, res) => {
     try {
-      const newUserData = await User.create({
+      const newSignup = await User.create({
         ...req.body,
         user_id: req.session.user_id,
       });
   
-      res.status(200).json(newUserData);
+      res.status(200).json(newSignup);
     } catch (err) {
       res.status(400).json(err);
     }
