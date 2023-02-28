@@ -34,10 +34,12 @@
   * Use ``npm install express-session``
 
   ## Useage 
-  Use the command ``npm start`` to run the application on the localhost or visit the deployed application [here](https://dark-wildflower-3803.herokuapp.com/).
+  Use the command ``npm start`` to run the application on the localhost or visit the deployed application [here](https://dark-wildflower-3803.herokuapp.com/). To see a walkthrough of the application watch video [here](https://drive.google.com/file/d/16Wg8OVcxMUf22gNFu9plRhyAmG44_hM-/view?usp=sharing).
   
 ![Mock of tech blog](./assets/tech-blog-01.png)
+![Mock of tech blog](./assets/tech-blog-02.png)
 ![Mock of tech blog](./assets/tech-blog-03.png)
+![Mock of tech blog](./assets/tech-blog-04.png)
 
   ## Testing 
   n/a
